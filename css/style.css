@@ -1,0 +1,358 @@
+/* 1. Reset padrão */
+* {
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    box-sizing: border-box; /* Garante que largura/altura incluam padding e borda */
+    font-family: "Poppins", sans-serif; /* Fonte padrão para todo o site */
+}
+
+/* 2. Estilo do body */
+body {
+    background: radial-gradient(ellipse at top, #0a0a0f, #000000); /* Fundo com gradiente escuro */
+    color: #ffffff; /* Cor de texto padrão branca */
+    min-height: 100vh; /* Altura mínima igual à altura da tela */
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Alinha os filhos verticalmente */
+}
+
+/* 3. Banner principal */
+.banner {
+    background: linear-gradient(to right, #39ff14, #ff00ff); /* Gradiente de cores neon */
+    color: #000; /* Texto preto */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    font-size: 2rem; /* Tamanho grande do texto */
+    font-weight: bold; /* Negrito */
+    text-shadow: 0 0 8px #00ffea; /* Sombra neon no texto */
+    box-shadow: 0 0 20px #39ff14; /* Sombra neon externa */
+}
+
+/* 4. Menu de navegação */
+.menu {
+    background-color: #0f0f1f; /* Fundo escuro */
+    border-bottom: 2px solid #ff4ecd; /* Linha inferior rosa neon */
+    box-shadow: 0 2px 10px #ff4ecd; /* Sombra inferior rosa */
+}
+
+/* Lista do menu */
+.menu ul {
+    display: flex; /* Layout horizontal */
+    justify-content: center; /* Centraliza os itens */
+    list-style: none; /* Remove marcadores */
+    padding: 10px 0; /* Espaçamento vertical */
+}
+
+/* Itens do menu */
+.menu ul li {
+    margin: 0 50px; /* Espaço entre os itens */
+}
+
+/* Links do menu */
+.menu ul li a {
+    color: #a259ff; /* Roxo claro */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: 600; /* Seminegrito */
+    transition: 0.3s; /* Suaviza mudanças */
+}
+
+.menu ul li a:hover {
+    color: #39ff14; /* Verde neon ao passar o mouse */
+    text-shadow: 0 0 6px #39ff14; /* Sombra verde */
+}
+
+/* 5. Conteúdo principal */
+.conteudo {
+    flex: 1; /* Ocupa o espaço restante */
+    padding: 30px; /* Espaçamento interno */
+    max-width: 800px; /* Largura máxima */
+    margin: 40px auto 0; /* Centraliza e dá margem superior */
+    background-color: rgba(15, 10, 30, 0.6); /* Fundo com transparência */
+    border-radius: 12px; /* Cantos arredondados */
+    box-shadow: 0 0 30px #ff00ff33; /* Sombra suave rosa */
+    backdrop-filter: blur(12px); /* Efeito de desfoque no fundo */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Títulos */
+h1,
+h2 {
+    color: #ff4ecd; /* Rosa neon */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    text-shadow: 0 0 5px #ff00ff; /* Sombra rosa */
+}
+
+/* Frase em destaque */
+p.frase {
+    font-style: italic; /* Itálico */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    color: #39ff14; /* Verde neon */
+}
+
+/* Slogans e destaques */
+p.slogan,
+p.destaque {
+    margin-bottom: 15px; /* Espaçamento inferior */
+    color: #d09cff; /* Roxo claro */
+}
+
+/* 6. Formulário */
+.formulario form {
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Alinhamento vertical */
+    align-items: center; /* Centraliza os elementos */
+}
+
+/* Rótulos */
+.formulario label {
+    color: #ff99ff; /* Rosa claro */
+    margin-bottom: 10px; /* Espaço abaixo */
+    width: 100%; /* Largura total */
+    max-width: 400px; /* Máximo de 400px */
+    text-align: left; /* Alinha texto à esquerda */
+}
+
+/* Inputs e selects */
+input,
+select {
+    padding: 10px; /* Espaçamento interno */
+    background: #1a001a; /* Fundo escuro */
+    border: 1px solid #a259ff; /* Borda roxa */
+    border-radius: 6px; /* Cantos arredondados */
+    margin: 5px 0 20px; /* Espaço entre os campos */
+    width: 100%; /* Largura total */
+    color: #fff0ff; /* Texto claro */
+    transition: 0.3s; /* Transição suave */
+}
+
+input:focus,
+select:focus {
+    outline: none; /* Remove borda azul padrão */
+    border-color: #39ff14; /* Borda verde neon ao focar */
+    box-shadow: 0 0 8px #39ff14; /* Sombra neon */
+}
+
+/* Input do tipo file */
+input[type="file"] {
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: #ffffff;
+}
+
+/* Botão padrão */
+button {
+    background: linear-gradient(to right, #a259ff, #ff4ecd); /* Gradiente roxo-rosa */
+    color: #000; /* Texto preto */
+    border: none;
+    padding: 12px 30px; /* Espaçamento */
+    border-radius: 50px; /* Arredondamento oval */
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 0 15px #ff00ff; /* Sombra rosa */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05); /* Aumenta levemente */
+    box-shadow: 0 0 25px #39ff14; /* Sombra verde neon */
+}
+
+/* 7. Rodapé */
+.rodape {
+    text-align: center;
+    padding: 20px;
+    background: #111; /* Preto escuro */
+    color: #bbb; /* Cinza claro */
+    font-size: 0.9rem;
+    border-top: 1px solid #ff00ff; /* Linha rosa neon */
+    box-shadow: 0 -5px 10px rgba(255, 0, 255, 0.3); /* Sombra superior rosa */
+}
+
+/* Página Sobre */
+
+/* Imagem da logo */
+.logo {
+    max-width: 500px; /* Largura máxima */
+    margin-bottom: 20px;
+}
+
+/* Slogan */
+.slogan {
+    font-size: 1.2em;
+    line-height: 1.6; /* Espaçamento entre linhas */
+    margin-top: 20px;
+}
+
+/* Texto destaque */
+.destaque {
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Página Vagas */
+
+/* Caixas de texto de vagas e parágrafos */
+.vaga,
+.paragrafo {
+    padding: 10px;
+    background: #1a001a;
+    border: 1px solid #a259ff;
+    border-radius: 6px;
+    margin: 5px 0 20px;
+    width: 100%;
+    color: #fff0ff;
+    transition: 0.3s;
+}
+
+/* Botão de candidatar */
+.botao-candidatar {
+    background: linear-gradient(to right, #a259ff, #ff4ecd);
+    color: #000;
+    padding: 2px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 0 50px #ff00ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.botao-candidatar:hover {
+    background-color: #7a3eea;
+}
+
+/* Página Login */
+
+/* Caixa de login centralizada */
+.conteudo .login {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza exatamente */
+    padding: 80px;
+    border-radius: 15px;
+    color: white;
+}
+
+/* Inputs específicos da página de login */
+input {
+    display: block;
+    margin-top: 20px;
+    padding: 15px;
+    border: none;
+}
+
+/* Botão de login */
+button {
+    margin-top: 20px;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+}
+
+/* Hover nos botões */
+button:hover {
+    cursor: pointer;
+}
+
+/* 8. Cards de vagas */
+
+.cards-container {
+    display: grid; /* Layout em grade */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo */
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Card individual */
+.card-vaga {
+    background-color: #fefefe;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: #000000;
+    font-weight: bold;
+}
+
+.card-vaga:hover {
+    transform: translateY(-5px); /* Levanta no hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-vaga h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+.card-vaga p {
+    margin: 6px 0;
+    font-size: 0.95rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+.botao-candidatar {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 16px;
+    background-color: #9155fd;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.botao-candidatar:hover {
+    background-color: #7a3eea;
+}
+
+/* 9. Tabela de diversidade */
+.tabela-diversidade table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.95rem;
+    color: #eee;
+    background-color: rgba(15, 10, 30, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px #ff00ff44;
+}
+
+.tabela-diversidade th,
+.tabela-diversidade td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #a259ff88;
+    text-align: left;
+}
+
+.tabela-diversidade thead {
+    background: linear-gradient(90deg, #a259ff, #ff4ecd);
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tabela-diversidade tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.tabela-diversidade tbody tr:hover {
+    background-color: #7a3eea33;
+    cursor: default;
+}
+
+
+
