@@ -30,3 +30,5 @@ Transmitir autenticidade com impacto positivo
 💬 Frase que define o projeto:
 Feminina. Forte. Futurista.
 
+Link ---> https://conectadev-women.netlify.app/
+
